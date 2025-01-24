@@ -3,7 +3,6 @@ package com.weskold.dslist.controllers;
 
 import com.weskold.dslist.dto.GameDTO;
 import com.weskold.dslist.dto.GameMinDTO;
-import com.weskold.dslist.entities.Game;
 import com.weskold.dslist.services.GameService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -22,7 +21,7 @@ public class GameController {
     @Autowired
     private GameService gameService;
 
-    @GetMapping(value = "/{id}")
+       @GetMapping(value = "/{id}")
     public GameDTO findById (@PathVariable Long id){ //Para que seja aceito o valor do ID que está vindo da requisição, precisa de colocar a notation @PathVariable antes do parametro.
         GameDTO result = gameService.findById(id);
         return result;
