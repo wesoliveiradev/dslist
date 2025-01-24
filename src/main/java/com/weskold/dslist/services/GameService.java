@@ -4,7 +4,6 @@ import com.weskold.dslist.dto.GameMinDTO;
 import com.weskold.dslist.entities.Game;
 import com.weskold.dslist.repositories.GameRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
